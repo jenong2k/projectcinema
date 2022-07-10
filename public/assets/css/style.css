@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --main-color: #fffcf4;
+    --second-color: #FFCE42;
+    --body-color: black;
+
+    --main-font: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--body-color);
+    font-family: var(--main-font);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section {
+    margin-top: 200px;
+}
+
+.container {
+    max-width: 1500px;
+    /* background-color:black; */
+}
+
+
+.navbar .nav-wrapper {
+    position: relative;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    height: 100px;
+    padding-top: 10px;
+    background-color: #000000;
+}
+
+.nav-wrapper .menu-toggle {
+    display: none;
+}
+
+.nav-wrapper .logo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: 118px;
+}
+
+.nav-wrapper .menu-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+    display: flex;
+    margin-left: -500px;
+    align-items: center;
+    gap: 50px;
+}
+
+.menu-wrapper .menu .menu-link {
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.61);
+    font-family: var(--main-font);
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.menu-wrapper .menu .menu-link.active {
+    font-weight: 500;
+    color: var(--second-color);
+}
+
+
+/* Home Start */
+.home {
+    margin-top: auto;
+}
+
+.home .home-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: auto;
+    padding-left: 172px;
+    background-color: rgb(20, 36, 56);
+}
+
+.home-wrapper .heading {
+    font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+
+    color: #000000;
+}
+
+.home-wrapper .subheading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+.home-wrapper .box-wrapper {
+    display: flex;
+    gap: 80px;
+}
+
+.home-wrapper .box-wrapper .box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.box-wrapper .box i {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.box-wrapper .box p {
+    font-size: 1.125rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--main-color);
+}
+
+.content-left .form-panel {
+    position: relative;
+    width: 640px;
+    height: 110px;
+    border-radius: 70px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* ini kotak teks seemore */
+.form-panel .kotak {
+    position: relative;
+    display: flex;
+    padding-left: 110px;
+    padding-top: 10px;
+    text-align: center;
+    z-index: 1;
+    /* position: absolute;
+    left: 0%;
+    background-color: #000000;
+    font-size: 19px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: white;
+    width: 120px;
+    height: 35px; */
+}
+
+/* ini text seemore */
+.kotak .text {
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    /* font-family: var(--heading-font);
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 100px;
+    color: #000000; */
+}
+
+.form-panel .title-form {
+    position: absolute;
+    top: -20px;
+    left: 15%;
+    transform: translateX(-50%);
+    background-color: var(--main-color);
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px 0;
+
+}
+
+/* ini image banner */
+.content-right .img-wrapper img {
+    position: relative;
+    width: 90%;
+    margin-top: 50px;
+}
+
+/*
+.content-right .circle{
+    position: absolute;
+    width: 577.2px;
+    height: 543.29px;
+    left: 900px;
+    top: 300px;
+    
+} */
+
+/* ini teks banner  */
+.home-wrapper .content-left {
+    flex: 0 0 50%;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: -80px;
+    color: white;
+}
+
+.content-left .heading {
+    color: white;
+}
+
+.content-left .subheading {
+    color: white;
+}
+
+.home-wrapper .content-right {
+    flex: 0 0 50%;
+}
+
+/* HOme End */
+
+/* service start */
+.service .service-wrapper {
+    margin: auto;
+}
+
+.service-wrapper .topbox {
+    text-align: center;
+}
+
+/* .service-wrapper .label-service{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color:white;
+} */
+.service-wrapper .heading-service {
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: white;
+    flex: 0 0 50%;
+    margin-left: 30px;
+    text-align: left;
+    margin-top: -122px;
+}
+
+.service-wrapper .subheading-service {
+    font-size: 12px;
+    color: white;
+
+}
+
+.service-wrapper .row2 {
+    margin-top: 50px;
+    width: 1300;
+    height: 400px;
+    background-color: var(--main-color);
+    /* color: #fff; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* ini movie1 box */
+
+.service-wrapper .box1 img {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: -500px;
+    z-index: 3;
+}
+
+.row2 .topkategori {
+    position: absolute;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 130px;
+    text-align: center;
+    z-index: 1;
+}
+
+.topkategori .label-nama {
+    position: absolute;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgba(255, 206, 66, 0.27);
+    border-radius: 10px;
+    margin: 160px 25px;
+    color: black;
+    text-align: center;
+}
+
+/* ini movie box 2 */
+.service-wrapper .img2-wrapper img {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: -100px;
+    z-index: 3;
+}
+
+.row2 .topkategori2 {
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.topkategori2 .label-nama2 {
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgba(255, 206, 66, 0.27);
+    border-radius: 10px;
+    margin: 160px 26px;
+    color: black;
+    text-align: center;
+}
+
+/* ini movie box 3 */
+.service-wrapper .img3-wrapper img {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: 1050px;
+    z-index: 3;
+}
+
+.row2 .topkategori3 {
+    position: relative;
+    display: flex;
+    padding-left: 10px;
+    padding-top: 130px;
+    text-align: center;
+}
+
+.topkategori3 .label-nama3 {
+    position: absolute;
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: rgba(255, 206, 66, 0.27);
+    border-radius: 10px;
+    margin: 160px 23px;
+    color: black;
+    text-align: center;
+}
+
+
+
+#googleMap {
+    margin-top: 100px;
+    margin-left: 10px;
+    margin-right: 8px;
+    width: 98vw;
+    height: 50vh;
+}
+
+.heading-map {
+    font-size: 40px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: #4a4a4a;
+    text-align: left;
+    margin: 100px 650px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 50px;
+}
+
+.footer-wrapper {
+    margin: 0px 580px;
+    display: flex;
+    text-align: left;
+}
+
+.col-1-footer img {
+    width: 150px;
+    margin-left: -500px;
+}
+
+.logo-footer span {
+    font-size: 25px;
+    color: var(--second-color);
+}
+
+.col-1-footer .subheading-footer {
+    font-size: 20px;
+    width: 400px;
+    margin-left: -500px;
+    color: white;
+}
+
+.sosmed-icon i {
+    position: relative;
+    font-size: 2rem;
+    width: 50px;
+    color: var(--main-color);
+    margin: 10px 0px;
+}
+
+
+/* AUDIENCE PAGE */
+.audience .heading {
+    text-align: left;
+    color: #FFCE42;
+    font-size: 30px;
+    margin: 2rem 0;
+}
+
+.navbar {
+    background: black;
+}
+
+.navbar-brand img {
+    height: 50px;
+    padding-left: 50px;
+}
+
+.navbar-nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: azure;
+}
+
+.navbar-nav a:hover {
+    color: rgb(255, 174, 0);
+}
+
+.navbar-light .navbar-brand {
+    color: black;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: black;
+}
+
+.navbar-light.navbar-nav .navbar-link {
+    color: white;
+}
+
+.fa-bars {
+    color: white;
+}
+
+.fa-pen-to-square:hover {
+    color: green;
+}
+
+.fa-trash-can:hover {
+    color: red;
+}
+
+@media only screen and (max-width:767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+/* AUDIENCE MEMBER */
+
+.audience .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 25px;
+    background: #FFCE42;
+    color: black;
+    padding: 0 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.audience {
+    margin-top: 20px;
+}
+
+.audience .container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.audience .audience-member {
+    overflow: hidden;
+    background: #FFCE42;
+    border-radius: 10px;
+}
+
+.audience .audience-member .member-img {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.audience .audience-member .button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audience .audience-member .button a {
+    transition: color 0.3s;
+    color: black;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.audience .audience-member .button a i {
+    line-height: 0;
+}
+
+.audience .audience-member .button a:hover {
+    color: #FFCE42;
+}
+
+.audience .audience-member:hover .button {
+    opacity: 1;
+}
+
+.audience .audience-member .button i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.audience .audience-member .member-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.audience .audience-member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.audience .audience-member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+}
+
+.audience .audience-member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6c757d;
+}
+
+
+
+
+/* MOVIE LIST */
+
+.movielist .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 25px;
+    background: #FFCE42;
+    color: black;
+    padding: 0 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+.movielist {
+    margin-top: 25px;
+}
+
+.movielist .header {
+    color : white;
+    /* font-size: 100px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.movielist .container {
+    /* margin-left: 170px; */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.movielist .movielist-member {
+    overflow: hidden;
+    background-color: #FFCE42;
+    border-radius: 10px;
+}
+
+.movielist .movielist-member .member-img {
+    position: relative;
+    overflow: hidden;
+    max-width: 110%;
+    max-height: 110%;
+}
+
+.movielist .movielist-member .button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movielist .movielist-member .button a {
+    transition: color 0.3s;
+    color: black;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movielist .movielist-member .button a i {
+    line-height: 0;
+}
+
+.movielist .movielist-member .button a:hover {
+    color: #FFCE42;
+}
+
+.movielist .movielist-member:hover .button {
+    opacity: 1;
+}
+
+.movielist .movielist-member .button i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.movielist .movielist-member .member-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.movielist .movielist-member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.movielist .movielist-member .member-info span {
+    display: f;
+    font-size: 13px;
+    font-weight: 400;
+    color: black;
+}
+
+.movielist .movielist-member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6c757d;
+}
+
+
+
+/* AUDIENCE FOOTER */
+.footer-audience {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.footer-audience a {
+    color: white;
+}
+
+.footer-audience p:hover {
+    color: #FFCE42;
+}
+
+.footer-audience a:hover {
+    color: #FFCE42;
+}
+
+.footer-audience img {
+    height: 70px;
+}
+
+/* CINEMA */
+
+.cinema{
+    color: white;
+    margin-top: 20px;
+}
+
+.cinema .btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 25px;
+    background: #FFCE42;
+    color: black;
+    padding: 0 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.cinema .container {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cinema .cinema-member {
+    overflow: hidden;
+    position: relative;
+}
+
+.cinema .cinema-member .member-img {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.cinema .cinema-member .button {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 40px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+    background: rgba(255, 255, 255, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema .cinema-member .button a {
+    transition: color 0.3s;
+    color: black;
+    margin: 0 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema .cinema-member .button a i {
+    line-height: 0;
+}
+
+.cinema .cinema-member .button a:hover {
+    color: #FFCE42;
+}
+
+.cinema .cinema-member:hover .button {
+    opacity: 1;
+}
+
+.cinema .cinema-member .button i {
+    font-size: 18px;
+    margin: 0 2px;
+}
+
+.cinema .cinema-member .member-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.cinema .cinema-member .member-info h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.cinema .cinema-member .member-info span {
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+}
+
+.cinema .cinema-member .member-info p {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6c757d;
+}
